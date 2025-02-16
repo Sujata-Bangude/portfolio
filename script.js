@@ -11,3 +11,21 @@ function openTab(tabId, btn) {
     // Add active class to clicked button
     btn.classList.add('active');
 }
+
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+
+        if (target) {
+            const navbarHeight = window.innerWidth <= 768 ? 80 : 0; // Adjust for mobile
+            const targetPosition = target.getBoundingClientRect().top + window.scrollY - navbarHeight;
+
+            window.scrollTo({
+                top: targetPosition,
+                behavior: "smooth"
+            });
+        }
+    });
+});

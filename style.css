@@ -486,3 +486,160 @@ nav {
 .footer-bottom p {
     margin: 0;
 }
+
+/* Mobile-first styling using media queries for smaller screens (phones) */
+@media only screen and (max-width: 600px) {
+  /* Stack the navigation links vertically on small screens */
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    margin: 10px 0;
+  }
+
+  /* Adjust profile image size for smaller screens */
+  img {
+    width: 100px;
+    height: 100px;
+  }
+
+  /* Adjust header and content layout */
+  header {
+    padding: 15px;
+  }
+
+  main {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 2.5em;
+  }
+
+  /* Modify text size for better readability on small screens */
+  p, h2 {
+    font-size: 1.2em;
+  }
+
+  /* Make sections stack vertically */
+  section {
+    margin-bottom: 20px;
+  }
+}
+
+
+
+/* Global adjustments for phones*/
+
+@media screen and (max-width: 768px) {
+    section {
+        scroll-margin-top: 80px; 
+    }
+}
+@media (max-width: 768px) {
+    /* Navigation Menu */
+    .nav {
+        position: relative !important;
+        width: 100% !important;
+        left: 60px !important;
+        text-align: center;
+        padding: 5px;
+        margin: 2px;
+        
+    }
+    
+
+   
+    .nav-menu li a {
+        padding: 5px 25px;
+      
+    }
+
+    /* Home Section */
+    #home h1 {
+        font-size: 36px;
+    }
+    #home p {
+        font-size: 18px;
+    }
+
+    .cv-btn {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    /* About Section */
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-image img {
+        width: 200px;
+        margin-bottom: 20px;
+        margin: 5px;
+    
+
+     
+    }
+
+    .about-content {
+        text-align: center;
+        max-width: 100%;
+    }
+
+    /* Tabs Section */
+    .tabs {
+        flex-direction: column;
+        margin-top: 15px;
+    }
+
+    .tab-btn {
+        width: 100%;
+        padding: 15px;
+        text-align: center;
+    }
+
+    /* Skills Section */
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill-item {
+        width: 80%;
+        text-align: center;
+    }
+
+    /* Projects Section */
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project {
+        width: 90%;
+    }
+
+    /* Contact Section */
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info {
+        text-align: center;
+    }
+
+    .contact-form {
+        width: 90%;
+    }
+
+    /* Footer Section */
+    .footer-container {
+        text-align: center;
+    }
+}

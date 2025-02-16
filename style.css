@@ -487,9 +487,9 @@ nav {
     margin: 0;
 }
 
-/* Mobile-first styling using media queries for smaller screens (phones) */
+
 @media only screen and (max-width: 600px) {
-  /* Stack the navigation links vertically on small screens */
+
   nav {
     display: flex;
     flex-direction: column;
@@ -500,13 +500,13 @@ nav {
     margin: 10px 0;
   }
 
-  /* Adjust profile image size for smaller screens */
+  
   img {
     width: 100px;
     height: 100px;
   }
 
-  /* Adjust header and content layout */
+
   header {
     padding: 15px;
   }
@@ -519,12 +519,12 @@ nav {
     font-size: 2.5em;
   }
 
-  /* Modify text size for better readability on small screens */
+
   p, h2 {
     font-size: 1.2em;
   }
 
-  /* Make sections stack vertically */
+ 
   section {
     margin-bottom: 20px;
   }
@@ -532,13 +532,8 @@ nav {
 
 
 
-/* Global adjustments for phones*/
 
-@media screen and (max-width: 768px) {
-    section {
-        scroll-margin-top: 80px; 
-    }
-}
+
 @media (max-width: 768px) {
     /* Navigation Menu */
     .nav {

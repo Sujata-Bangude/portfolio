@@ -1,0 +1,488 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation Bar */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(53, 51, 51, 0.603);
+    padding: 25px 0;
+    z-index: 1000;
+
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+.nav-menu li a:hover {
+    background-color: crimson;
+    border-radius: 5px;
+}
+
+
+#home {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background: linear-gradient(135deg, #1e1e1e, #3a3a3a);
+}
+
+/* Home Section Heading */
+#home h1 {
+    font-size: 60px; 
+    font-weight: bold;
+
+}
+
+/* Home Section Subtext */
+#home p {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.cv-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+.cv-btn:hover {
+    background-color: crimson;
+}
+/* About Section */
+#about {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222;
+    color: white;
+    padding: 50px;
+}
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: 0 auto;
+    gap: 30px;
+    justify-content: center;
+}
+
+
+/* Left: Profile Image */
+.about-image img {
+    width: 250px;
+    border-radius: 10px;
+}
+
+/* Right: About Content */
+.about-content {
+    flex: 1;
+}
+
+/* Tabs */
+.tabs {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.tab-btn {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.tab-btn:hover, .tab-btn.active {
+    background-color: crimson;
+}
+
+/* Tab Content (Initially Hidden) */
+.tab-content {
+    display: none;
+    margin-top: 15px;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+
+/* Left: Profile Image */
+.about-image img {
+    width: 250px;
+    border-radius: 50px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8); 
+    margin-right: 100px ;
+}
+
+/* Right: About Content */
+.about-content {
+    flex: 1;
+    max-width: 500px;
+    text-align: left;
+}
+
+/* Heading */
+.about-content h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+/* About Paragraph */
+.about-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+/* Tabs */
+.tabs {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.tab-btn {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 15px 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 16px;
+}
+
+.tab-btn:hover, .tab-btn.active {
+    background-color: crimson;
+}
+
+.tab-content {
+    display: none;
+    margin-top: 15px;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+   
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-image img {
+        width: 200px;
+    }
+
+    .about-content {
+        max-width: 100%;
+        text-align: center;
+    }
+}
+
+
+/* Skills Section */
+
+.skills-container{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 20px; 
+    
+ 
+   
+}
+
+* Skill Items */
+.skill-item {
+   
+    background-color: #333;
+    padding: 10px 20px;
+    border-radius: px;
+    font-size: 18px;
+    text-transform: capitalize;
+    box-shadow: 10 8px 12px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    
+}
+
+.skill-item:hover {
+    background-color: crimson;
+    transform: scale(1.1);
+}
+
+/* Experience Section */
+.experience-duration {
+    font-family: Arial, sans-serif; 
+    font-size: 16px; 
+    font-weight: bold;
+   padding-top: 10px;
+    margin-bottom: 5px;
+}
+
+.experience-role {
+    font-size: 16px; 
+    font-weight: normal;
+    margin-bottom: 8px;
+}
+
+.experience-description p {
+    font-size: 14px; 
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+
+.tab-content ul {
+    margin-left: 20px; 
+}
+
+/* Education Section */
+.education-duration {
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 10px;
+    margin-bottom: 5px;
+}
+
+.education-degree {
+    font-size: 16px; 
+    font-weight: normal;
+    margin-bottom: 8px;
+}
+/* Projects Section */
+#projects {
+    padding: 50px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+#projects h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.project {
+    background-color: #444;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+    text-align: left;
+}
+
+.project h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.project p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.project a {
+    font-size: 16px;
+    color: #00bfff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.project a:hover {
+    color: crimson;
+}
+
+.tab-content ul {
+    margin-left: 20px;  
+}
+/* Contact Section */
+#contact {
+    background-color: #222;  
+    padding: 50px 10%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* Contact Container */
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Left Part: Contact Info */
+.contact-info {
+    flex: 1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 120px;
+}
+
+.contact-info h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+
+.contact-info a {
+    color:white; 
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+
+.contact-info p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.social-links {
+    margin-top: 20px;
+    margin-left: 45px;
+}
+
+.social-links a {
+    margin-right: 20px;
+    font-size: 24px;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.social-links a:hover {
+    transform: scale(1.9);
+}
+
+/* Right Part: Contact Form */
+.contact-form {
+    flex: 1.5;
+    background-color: #444;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(70, 68, 68, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 500px;
+    width: 100%;
+}
+
+.contact-form h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    
+}
+
+.contact-form label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #222;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: crimson;
+}
+
+/* Footer Section */
+#footer {
+    background-color: #444;
+    color: white;
+    padding: 20px 10%;
+    text-align: center;
+    position: relative;
+}
+
+/* Footer Container */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Bottom Section: Copyright */
+.footer-bottom {
+    margin-top: 08px;
+    font-size: 14px;
+    color: white;
+
+}
+
+.footer-bottom p {
+    margin: 0;
+}

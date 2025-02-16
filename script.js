@@ -33,6 +33,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 document.getElementById('myForm').addEventListener('submit', function(event) {
     event.preventDefault(); 
-    
-    alert('Form Submitted Successfully!');
+
+   
+    alert('Your message has been sent successfully!'); 
+
+   
+    this.submit(); 
   });

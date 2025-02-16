@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Home Section (Without Parallax) -->
+    <section id="home">
+        <div class="home-content">
+            <h1>Hi, I'm Sujata</h1>
+            <p>Backend Developer | Java | Spring Boot</p>
+            <a href="files/Sujata_Resume.pdf" download class="cv-btn">Download CV</a>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <div class="about-container">
+            <!-- Left: Profile Image -->
+            <div class="about-image">
+                <img src="Images/P2.jpg" alt="Profile Image">
+            </div>
+
+            <!-- Right: About Content with Tabs -->
+            <div class="about-content">
+                <h2>About Me</h2>
+                <p>I’m Sujata Bangude, a backend developer passionate about Java, Spring Boot, and MySQL. I focus on building scalable and high-performance applications, constantly improving my skills and embracing new challenges. In addition to development, I enjoy writing articles and expressing creativity through Marathi poetry.</p>
+
+                <!-- Tabs -->
+                <div class="tabs">
+                    <button class="tab-btn" onclick="openTab('skills', this)">Technical Skills</button>
+                    <button class="tab-btn" onclick="openTab('experience', this)">Experience</button>
+                    <button class="tab-btn" onclick="openTab('education', this)">Education</button>
+                </div>
+
+                <!-- Tab Content -->
+                <div id="skills" class="tab-content">
+                    <div class="skills-container">
+                        <div class="skill-item">Java</div>
+                        <div class="skill-item">Spring Boot</div>
+                        <div class="skill-item">MySQL</div>
+                        <div class="skill-item">MongoDB</div>
+                        <div class="skill-item">AWS</div>
+                        <div class="skill-item">git</div>
+                        <div class="skill-item">Maven</div>
+                        <div class="skill-item">Postman</div>
+                        <div class="skill-item">Html</div>
+                        <div class="skill-item">Css</div>
+                       
+                    </div>
+                </div>
+<!-- Experience Tab Content -->
+<div id="experience" class="tab-content">
+    <ul>
+        <li>
+            <div class="experience-duration">
+                <strong>June 2022 - Present</strong>
+            </div>
+            <div class="experience-role">
+                <span>Java Developer at Infosys</span>
+            </div>
+            <div class="experience-description">
+                <p>- Working on API development and microservices, building scalable applications with Java and Spring Boot.</p>
+            </div>
+        </li>
+        <li>
+            <div class="experience-duration">
+                <strong>August 2021 - September 2021</strong>
+            </div>
+            <div class="experience-role">
+                <span>Web Developer Intern at Learnovate E-commerce</span>
+            </div>
+            <div class="experience-description">
+                <p>- Developed and maintained e-commerce websites, enhancing user experience and ensuring responsive design.</p>
+            </div>
+        </li>
+    </ul>
+</div>
+                <!-- Education Tab Content -->
+<div id="education" class="tab-content">
+    <ul>
+        <li>
+            <div class="education-duration">
+                <strong>2021 - 2023</strong>
+            </div>
+            <div class="education-degree">
+                <span>MSc in Computer Science from Asian College Pune</span>
+            </div>
+        </li>
+        <li>
+            <div class="education-duration">
+                <strong>2018 - 2021</strong>
+            </div>
+            <div class="education-degree">
+                <span>BSc in Computer Science from H.V. Desai College Pune</span>
+            </div>
+        </li>
+    </ul>
+</div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Projects Section -->
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-container">
+        <div class="project">
+            <h3>Blog Management System</h3>
+            <p>A backend application built with Java, Spring Boot, and MySQL that allows users to manage blogs. It supports features like creating, updating, deleting, and viewing blogs. The system also includes user authentication for secure access, enabling users to register, log in, and interact with blogs. Key features include liking, disliking, commenting on blogs, and searching blogs by keywords</p>
+            <p>Technologies Used:Java, Spring Boot, MySQL</p>
+            <a href="https://github.com/Sujata-Bangude/blog-management" target="_blank">View on GitHub</a>
+        </div>
+        <div class="project">
+            <h3>Project 2: E-commerce Backend System</h3>
+            <p>An e-commerce backend system built using Java, Spring Boot, and MySQL.</p>
+            <a href="https://github.com/your-repo-link" target="_blank">View on GitHub</a>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+    <div class="contact-container">
+        <!-- Left Part: Contact Info -->
+        <div class="contact-info">
+            <h2>Contact Me</h2>
+            <p>Email: <a href="mailto:sujatabangude46@gmail.com">sujatabangude46@gmail.com</a></p>
+            
+            <!-- Social Media Links -->
+            <div class="social-links">
+                <a href="https://github.com/Sujata-Bangude" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/sujata-bangude-a05628265?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="contact-form">
+            <h2>Send Me a Message</h2>
+            <form action="https://formsubmit.co/sujatabangude46@gmail.com" method="POST">
+                <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html">
+                <input type="hidden" name="_subject" value="New Message from Website">
+                <input type="hidden" name="_captcha" value="false">
+        
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" placeholder="Enter your message" rows="4" required></textarea>
+        
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer id="footer">
+    <div class="footer-container"></div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2025 Developed by Sujata Bangude. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>

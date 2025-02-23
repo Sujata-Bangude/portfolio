@@ -481,7 +481,7 @@ nav {
         display: none; 
         flex-direction: column;
         position: absolute;
-        top: 60px;
+        top: 40px;
         width: 100%;
         left: 0;
         background-color: #222;
@@ -531,7 +531,7 @@ nav {
         font-size: 16px;
     }
     #about{
-    height: 200vh;
+    height: 170vh;
     display: flex;
     justify-content: center;
     align-items: center;

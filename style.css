@@ -468,7 +468,7 @@ nav {
     margin: 0;
 }
 
-/* Responsive Design: Mobile Optimization */
+ /* Responsive Design */
 @media (max-width: 768px) {
     .nav {
         flex-direction: row;
@@ -498,7 +498,7 @@ nav {
         display: flex; 
     }
 
-    /* Add hamburger menu */
+   
     .hamburger {
         display: block;
         cursor: pointer;
@@ -561,15 +561,15 @@ nav {
     }
 
     .tabs {
-        flex-direction: column; /* Stack tabs vertically */
+        flex-direction: column; 
     }
 
     .tab-btn {
-        width: 100%; /* Full-width buttons */
+        width: 100%; 
     }
 
     .skills-container {
-        grid-template-columns: repeat(1, 1fr); /* One column on small screens */
+        grid-template-columns: repeat(1, 1fr); 
     }
 
     .tab-btn {

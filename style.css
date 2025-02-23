@@ -537,25 +537,24 @@ nav {
     align-items: center;
     background-color: #222;
     color: white;
-    padding: 50px;
+    padding: 10px;
     
     }
 
    .about-container {
-        flex-direction: column; 
-        text-align: center;
-        display: flex;
+     flex-direction: column; 
+    text-align: center;
+    display: flex;
     flex-wrap: wrap;
     max-width: 900px;
     margin: 0 auto;
-    /* gap: 30px; */
     justify-content: center;
         
     }
 
     .about-image img {
         max-width: 150px;
-        margin-top: 60px;
+        margin-top: 20px;
      
     }
 

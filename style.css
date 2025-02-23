@@ -541,6 +541,9 @@ nav {
     
     }
 
+    .about-content h2{
+        text-align: center;
+    }
    .about-container {
      flex-direction: column; 
     text-align: center;
@@ -551,10 +554,13 @@ nav {
     justify-content: center;
         
     }
-
+ 
     .about-image img {
         max-width: 150px;
-        margin-top: 20px;
+      display: block;
+    margin: 0 auto;
+     max-width: 100%;
+    height: auto;
      
     }
 

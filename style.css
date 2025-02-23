@@ -346,7 +346,6 @@ nav {
     max-width: 1200px;
 }
 
-/* Left Part: Contact Info */
 .contact-info {
     flex: 1;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -387,7 +386,7 @@ nav {
     transform: scale(1.9);
 }
 
-/* Right Part: Contact Form */
+
 .contact-form {
     flex: 1.5;
     background-color: #444;
@@ -402,6 +401,7 @@ nav {
 .contact-form h2 {
     font-size: 28px;
     margin-bottom: 20px;
+   
     
 }
 

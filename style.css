@@ -484,7 +484,7 @@ nav {
         top: 70px;
         width: 100%;
         left: 0;
-   background-color: #222;
+     background-color: #222;
         text-align: left;
         padding: 10px 0;
         
@@ -537,7 +537,8 @@ nav {
     align-items: center;
     background-color: #222;
     color: white;
-    padding: 10px;
+    padding-top: 5px;
+    
     
     }
 
@@ -556,11 +557,12 @@ nav {
     }
  
     .about-image img {
-        max-width: 150px;
+       
       display: block;
     margin: 0 auto;
      max-width: 100%;
     height: auto;
+    padding-top: 0%;
      
     }
 
